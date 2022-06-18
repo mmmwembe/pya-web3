@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from web3 import Web3
 import os
 import json
-
+from brownie import accounts, network, config, Contract
 
 app = Flask(__name__)
 app.secret_key = b'\xcc^\x91\xea\x17-\xd0W\x03\xa7\xf8J0\xac8\xc5'
@@ -60,6 +60,7 @@ def getBalanceFromAddress2(_web3_connection,_address, _token):
 def updateAccountBalances():
 
     erc20_address = app.config['test_token_contract_address'] # Token address on polygon_testnet_url
+    # erc20 = web3_polygon_testnet.eth.contract(erc20_address, abi=TestAminaToken["abi"])
     erc20 = Contract.from_abi("Arbitrary ERC20", erc20_address, abi=TestAminaToken["abi"])
 
     user_account = user_eth_address

@@ -59,6 +59,8 @@ ERROR: Could not find a version that satisfies the requirement pywin32==304 (fro
 16) Manually installed requirements"
 (env)> pip install flask
 (env)> pip install web3
+(env)> pip install eth-brownie
+(env)> pip install python-dotenv
 
 Then save requirements.txt again so that its upto date
 
