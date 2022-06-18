@@ -85,3 +85,5 @@ Edit configuration file :
 
 21) Add dotenv so we can access env variables
 pip install python-dotenv
+
+22) pip install web3 eth-brownie flask

@@ -22,7 +22,7 @@ web3_polygon_testnet = Web3(Web3.HTTPProvider(app.config['polygon_testnet_url'])
 f = open('build/contracts/TestAminaToken.json')
 TestAminaToken = json.load(f)
 
-user_eth_address = os.environ['USER_ETH_ADDRESS'] 
+user_eth_address = Web3.toChecksumAddress(os.environ['USER_ETH_ADDRESS']) 
 
 
 def limitDecimalPlaces(v, decimals):
