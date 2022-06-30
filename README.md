@@ -61,6 +61,7 @@ ERROR: Could not find a version that satisfies the requirement pywin32==304 (fro
 (env)> pip install web3
 (env)> pip install eth-brownie
 (env)> pip install python-dotenv
+(env)> pip install eth-account
 
 Then save requirements.txt again so that its upto date
 
@@ -87,3 +88,6 @@ Edit configuration file :
 pip install python-dotenv
 
 22) pip install web3 eth-brownie flask
+
+23) PythonAnywhere has a whitelisting of allowed websites:
+https://www.pythonanywhere.com/whitelist/
